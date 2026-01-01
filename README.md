@@ -785,9 +785,6 @@ let apiKey = ProcessInfo.processEnvironment["VISION_API_KEY"] ?? ""
 ---
 
 
-<p align="center">
-  <b>Built with ❤️ using SwiftUI</b>
-</p>
 
 <p align="center">
   <i>Making landmark recognition accessible to everyone</i>
