@@ -602,13 +602,11 @@ Use **real photographs** of actual landmarks:
 ✅ **Original photos** (not heavily filtered)
 
 ---
-
 ## 🖼️ Example Test Images
 
 Need sample images to test the app? Use these curated landmark photos:
 
 ### 📥 Download Test Images
-
 **[Click here to access example landmark images](https://1drv.ms/w/c/85bc807c3c53e7e2/IQAa-bz5FkrvTYHBMVe1BEiIAVYZieiKXJ2zYsXtASD_SxU?e=xeshbj)**
 
 This collection includes high-quality photos of:
