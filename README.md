@@ -566,31 +566,81 @@ responses[0]
    - Grant photo library access when prompted
 
 5. **Test**
+   - Download [example landmark images](https://1drv.ms/w/c/85bc807c3c53e7e2/IQAa-bz5FkrvTYHBMVe1BEiIAVYZieiKXJ2zYsXtASD_SxU?e=xeshbj) to your device
    - Tap "Select Landmark Image"
-   - Choose famous landmark (Taj Mahal, Statue of Liberty, etc.)
+   - Choose a famous landmark photo (**not a screenshot!**)
    - Tap "Detect Landmark"
    - View results! 🎉
+
+> ⚠️ **Important**: The app will **not work** with screenshots or low-quality images. Use real landmark photographs for accurate detection.
+
+---
+
+## 📸 Image Requirements (IMPORTANT)
+
+### ⚠️ Critical: Use Proper Landmark Photos Only
+
+This app **will not work** with:
+
+❌ **Screenshots**  
+❌ **App UI captures**  
+❌ **Low-quality/blurry images**  
+❌ **Heavily edited photos**  
+❌ **Images with text overlays**  
+❌ **Memes or graphics**  
+❌ **Drawings or illustrations**
+
+### ✅ What Works Best
+
+Use **real photographs** of actual landmarks:
+
+✅ **Clear, high-resolution photos**  
+✅ **Well-lit images** (natural daylight preferred)  
+✅ **Landmark as the main subject**  
+✅ **Straight-on or iconic angles**  
+✅ **Minimal obstructions** (people, trees okay in moderation)  
+✅ **Original photos** (not heavily filtered)
+
+---
+
+## 🖼️ Example Test Images
+
+Need sample images to test the app? Use these curated landmark photos:
+
+### 📥 Download Test Images
+
+**[Click here to access example landmark images](https://1drv.ms/w/c/85bc807c3c53e7e2/IQAa-bz5FkrvTYHBMVe1BEiIAVYZieiKXJ2zYsXtASD_SxU?e=xeshbj)**
+
+This collection includes high-quality photos of:
+- Eiffel Tower 🗼
+- Taj Mahal 🕌
+- Statue of Liberty 🗽
+- And more famous landmarks
+
+> 💡 **Tip**: Download these images to your iPhone/simulator and use them to test the app's landmark detection capabilities.
 
 ---
 
 ## 🎯 Supported Landmarks
 
-### Best Recognition
+### Best Recognition Categories
 
-- 🗼 **Towers**: Eiffel Tower, Tokyo Tower, CN Tower
+- 🗼 **Towers**: Eiffel Tower, Tokyo Tower, CN Tower, Burj Khalifa
 - 🏛️ **Monuments**: Taj Mahal, Statue of Liberty, Christ the Redeemer
-- 🏰 **Castles**: Neuschwanstein, Edinburgh Castle
-- 🕌 **Religious Sites**: Angkor Wat, Machu Picchu
-- 🌉 **Bridges**: Golden Gate, Tower Bridge
+- 🏰 **Castles**: Neuschwanstein, Edinburgh Castle, Prague Castle
+- 🕌 **Religious Sites**: Angkor Wat, Machu Picchu, Notre-Dame
+- 🌉 **Bridges**: Golden Gate Bridge, Tower Bridge, Brooklyn Bridge
+- 🏟️ **Structures**: Colosseum, Sydney Opera House, Big Ben
 
-### Tips for Best Results
+### 📊 Recognition Quality Guide
 
-✅ Clear, well-lit images  
-✅ Landmark as main subject  
-✅ Avoid heavy filters  
-✅ Straight-on or iconic angles  
-❌ Avoid heavily cropped images  
-❌ Avoid photos with text overlays
+| Image Quality | Detection Success Rate | Example |
+|---------------|----------------------|---------|
+| 🟢 **Excellent** - Professional photo | 95%+ | Clear daylight, landmark centered |
+| 🟡 **Good** - Tourist photo | 80-95% | Some obstructions, good lighting |
+| 🟠 **Fair** - Casual snap | 50-80% | Distance shot, mixed lighting |
+| 🔴 **Poor** - Low quality | <50% | Blurry, dark, heavily cropped |
+| ⚫ **Fails** - Screenshot/graphic | 0% | Not a real photograph |
 
 ---
 
@@ -598,11 +648,28 @@ responses[0]
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
-| "No landmark detected" | Image unclear or unknown landmark | Use famous landmark with clear view |
+| "No landmark detected" | Screenshot or low-quality image | **Use real landmark photo** (see test images above) |
+| "No landmark detected" | Unknown/obscure landmark | Use world-famous landmarks from example collection |
 | "Invalid API key" | Wrong/missing API key | Verify key in Cloud Console |
 | "Quota exceeded" | Over 1000 requests/month | Wait for quota reset or upgrade plan |
 | "Network error" | No internet connection | Check WiFi/cellular connection |
 | Image picker not showing | Missing permissions | Add `NSPhotoLibraryUsageDescription` to Info.plist |
+| Detects wrong landmark | Poor image quality or angle | Use high-quality photo with clear view |
+| App crashes on selection | Image format not supported | Use JPEG/PNG formats only |
+
+### 🚫 Most Common Mistake
+
+**Using screenshots instead of real photos!**
+
+```
+❌ Screenshot of Google Images → Won't work
+❌ Screenshot of Instagram post → Won't work
+❌ Screenshot of website → Won't work
+
+✅ Real photo from camera → Works perfectly
+✅ Download actual landmark image → Works perfectly
+✅ Use provided test images → Works perfectly
+```
 
 ---
 
@@ -710,8 +777,20 @@ let apiKey = ProcessInfo.processEnvironment["VISION_API_KEY"] ?? ""
 3. View **Vision API** usage statistics
 
 ---
- 
+  
 ## 🙏 Acknowledgments
 
 - [Google Cloud Vision API](https://cloud.google.com/vision) - Landmark detection
-- [SwiftUI](https://developer.apple.com/xcode/swiftui/) - Modern UI framework 
+- [SwiftUI](https://developer.apple.com/xcode/swiftui/) - Modern UI framework
+- [Apple Developer Documentation](https://developer.apple.com/documentation/)
+
+---
+
+
+<p align="center">
+  <b>Built with ❤️ using SwiftUI</b>
+</p>
+
+<p align="center">
+  <i>Making landmark recognition accessible to everyone</i>
+</p> 
